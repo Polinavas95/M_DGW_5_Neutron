@@ -11,5 +11,11 @@ class Geometry: public G4VUserDetectorConstruction{
 
 public:
     G4VPhysicalVolume *Construct() override;
+
+    Geometry();
+
+private:
+    G4double box_size;
+    G4String mName;
 };
 #endif //TEMPLATE_GEOMETRY_HH

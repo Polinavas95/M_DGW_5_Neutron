@@ -11,7 +11,7 @@
 class PrimaryGen: public G4VUserPrimaryGeneratorAction{
 private:
     G4ParticleGun* gun;
-
+    G4ThreeVector pos_vect;
 public:
     PrimaryGen();
 

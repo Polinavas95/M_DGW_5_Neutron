@@ -4,7 +4,8 @@ project(${NAME})
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(CMAKE_PREFIX_PATH /home/student/geant4/geant4-install)
+set(CMAKE_PREFIX_PATH /home/idalov/geant4/geant4-install)
+#set(CMAKE_PREFIX_PATH /home/student/geant4/geant4-install)
 
 find_package(Geant4 REQUIRED ui_all vis_all)
 

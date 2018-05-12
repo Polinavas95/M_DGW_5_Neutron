@@ -11,10 +11,11 @@ void PrimaryGen::GeneratePrimaries(G4Event *anEvent) {
 }
 
 PrimaryGen::PrimaryGen() {
+    pos_vect.set(0,0,-10*cm);
     gun = new G4ParticleGun(1);
     gun->SetParticleDefinition(G4Gamma::GammaDefinition());
     gun->SetParticleMomentumDirection(G4ThreeVector(0,0,1));
-    gun->SetParticlePosition(G4ThreeVector(0,0,-10*cm));
+    gun->SetParticlePosition(pos_vect);
     gun->SetParticleEnergy(661*keV);
 }
 
